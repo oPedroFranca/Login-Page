@@ -1,0 +1,62 @@
+.bodyRegister {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 15px;
+}
+
+/* -------------------------- Left Screen -------------------------- */
+
+.left-page-screen-register {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgb(128,118,252);
+  background: linear-gradient(183deg, rgba(128,118,252,1) 0%, rgba(249,199,227,1) 86%);
+  width: 45%;
+  height: 100%;
+  padding: 30px 20px 30px 20px;
+  border-radius: 10px;
+}
+
+.left-page-screen-register span h1 {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.left-page-screen-register span p {
+  padding: 0px 30px 0px 30px;
+  font-size: 13px;
+  margin-bottom: 90px;
+  letter-spacing: 1px;
+}
+
+.left-page-screen-register span img {
+  width: 100%;
+}
+
+@media (max-height: 724px) {
+  .left-page-screen-register span img {
+    width: 80%;
+  }
+  .left-page-screen-register span p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-height: 600px){
+  .left-page-screen-register span img {
+    display: none;
+  }
+}
+
+/* -------------------------- Right Screen -------------------------- */
+
+.right-page-screen-register {
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+}
