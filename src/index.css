@@ -6,7 +6,8 @@
   --dark : rgb(56, 56, 56);
   --gray: rgb(184, 184, 184);
   --dark-gray: rgb(131, 130, 130);
-  --purple: rgb(107, 2, 204);
+  --purple: rgb(115, 54, 255);
+  --light-purple: rgba(106, 2, 204, 0.452);
 }
 
 * {
@@ -21,7 +22,6 @@ body {
 }
 
 button {
-  margin-left: 10px;
   font-weight: 600;
   width: 85px;
   height: 30px;

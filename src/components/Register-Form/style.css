@@ -1,0 +1,42 @@
+.form-register {
+  width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-register .forms-iputs{
+  display: grid;
+}
+
+.form-register .forms-iputs label{
+  color: var(--dark);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-register .forms-iputs input{
+  width: 384px;
+  height: 40px;
+  border: solid 1px var(--gray);
+  border-radius: 3px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding: 0px 10px 0px 10px;
+  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
+}
+
+.form-register .forms-iputs input:focus{
+  outline: none;
+  border: 0.2em solid var(--purple);
+  color: var(--purple);
+  font-size: 14px;
+}
+
+.form-register .forms-iputs input::placeholder {
+  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
+  color: var(--gray);
+}
+
+.form-register .forms-iputs input:focus::placeholder {
+  color: var(--light-purple);
+}
