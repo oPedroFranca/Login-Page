@@ -1,62 +1,143 @@
-.bodyRegister {
+.bodyLogin {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   display: flex;
   padding: 15px;
 }
 
 /* -------------------------- Left Screen -------------------------- */
 
-.left-page-screen-register {
+.left-page-screen {
   display: grid;
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: white;
+
+  color: var(--white);
   background: rgb(128,118,252);
   background: linear-gradient(183deg, rgba(128,118,252,1) 0%, rgba(249,199,227,1) 86%);
+
   width: 45%;
   height: 100%;
   padding: 30px 20px 30px 20px;
   border-radius: 10px;
 }
 
-.left-page-screen-register span h1 {
-  font-size: 35px;
+.left-page-screen span h1 {
+  font-size: 40px;
+  font-weight: 900;
   margin-bottom: 8px;
 }
 
-.left-page-screen-register span p {
+.left-page-screen span p {
   padding: 0px 30px 0px 30px;
   font-size: 13px;
   margin-bottom: 90px;
   letter-spacing: 1px;
 }
 
-.left-page-screen-register span img {
+.left-page-screen span img {
   width: 100%;
 }
 
 @media (max-height: 724px) {
-  .left-page-screen-register span img {
+  .left-page-screen span img {
     width: 80%;
   }
-  .left-page-screen-register span p {
+  .left-page-screen span p {
     margin-bottom: 30px;
   }
 }
 
 @media (max-height: 600px){
-  .left-page-screen-register span img {
+  .left-page-screen span img {
     display: none;
   }
 }
 
 /* -------------------------- Right Screen -------------------------- */
 
-.right-page-screen-register {
-  background-color: rgb(255, 255, 255);
-  width: auto;
-  height: auto;
+.right-page-screen {
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px 10px 50px;
+  width: 55%;
+  height: 100%;
+}
+
+.right-page-body {
+  display: grid;
+  width: 384px;
+  height: 100%;
+  align-items: center;
+}
+
+.signin-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signin-header p {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.signin-header button {
+  border: solid 1px var(--gray);
+  color: var(--dark-gray);
+  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
+}
+
+.signin-header button:hover {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.login-account-text {
+  width: 100%;
+}
+
+.login-account-text h1 {
+  color: var(--dark);
+}
+
+.login-account-text p {
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.form-register {
+  width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-register .forms-iputs{
+  display: grid;
+}
+
+.form-register .forms-iputs label{
+  color: var(--dark);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-register .forms-iputs input{
+  width: 384px;
+  height: 40px;
+  border: solid 1.2px var(--gray);
+  border-radius: 3px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding: 0px 10px 0px 10px;
+  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
+}
+
+.form-register .forms-iputs input:focus{
+  outline: none;
+  border: 0.2em solid var(--purple);
+  color: var(--purple);
+  font-size: 14px;
 }

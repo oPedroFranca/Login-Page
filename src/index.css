@@ -1,15 +1,31 @@
+:root {
+  width: 100vw;
+  height: 100vh;
+
+  --white: rgb(255, 255, 255);
+  --dark : rgb(56, 56, 56);
+  --gray: rgb(184, 184, 184);
+  --dark-gray: rgb(131, 130, 130);
+  --purple: rgb(107, 2, 204);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-:root {
-  width: 100vw;
-  height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   display: flex;
+}
+
+button {
+  margin-left: 10px;
+  font-weight: 600;
+  width: 85px;
+  height: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: white;
 }
