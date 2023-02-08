@@ -1,10 +1,11 @@
 import React from 'react';
+import { RegisterButton } from '../Register-Button/inde';
 import './style.css';
 
 export const RegisterForm = () => {
   return (
     <form className="form-register">
-      <span className="forms-iputs">
+      <span className="forms-iputs name">
         <label htmlFor="input-email">Name</label>
         <input
           type="text"
@@ -12,7 +13,7 @@ export const RegisterForm = () => {
           className="input-Name"
         />
       </span>
-      <span className="forms-iputs">
+      <span className="forms-iputs email">
         <label htmlFor="input-email">Email</label>
         <input
           type="email"
@@ -20,7 +21,7 @@ export const RegisterForm = () => {
           className="input-email"
         />
       </span>
-      <span className="forms-iputs">
+      <span className="forms-iputs password">
         <label htmlFor="input-password">Password</label>
         <input
           type="password"
@@ -28,6 +29,8 @@ export const RegisterForm = () => {
           className="input-password"
         />
       </span>
+
+      <RegisterButton />
     </form>
   );
 };
