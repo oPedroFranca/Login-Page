@@ -24,6 +24,8 @@
   align-items: center;
 }
 
+/* -------------------------- header-Content -------------------------- */
+
 .signin-header {
   display: flex;
   position: absolute;
@@ -55,6 +57,8 @@
   border: 0.2em solid var(--purple);
 }
 
+/* -------------------------- Body content -------------------------- */
+
 .login-account-text {
   width: 100%;
 }
@@ -68,6 +72,8 @@
   font-size: 16px;
 }
 
+/* -------------------------- Footer content -------------------------- */
+
 .login-with {
   display: flex;
   align-items: center;
@@ -75,13 +81,35 @@
 
 .login-with p{
   margin-right: 8px;
+  color: var(--gray);
 }
 
 .login-with a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 35px;
   height: 35px;
   margin: 0px 8px 0px 8px;
   border-radius: 50%;
   border: 1px solid var(--gray);
-  background-color: var(--white);
+  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
+}
+
+.login-with .linkedin-icon {
+  color: #0B84BF;
+}
+
+.login-with .facebook-icon {
+  color: #1977F2;
+}
+
+.login-with a:hover {
+  outline: none;
+  border: 0.15em solid var(--purple);
+}
+
+.login-with a:focus {
+  outline: none;
+  border: 0.15em solid var(--purple);
 }

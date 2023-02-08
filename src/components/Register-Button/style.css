@@ -7,9 +7,28 @@
   border-radius: 5px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   text-decoration: none;
-  transition: 0.5s;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
 }
 
+.registerButton:focus {
+  outline: none;
+}
+
+
+.button-line {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 2px;
+  width: 171px;
+  border: 2px solid var(--white);
+}
+
+.button-line:hover {
+  border: 2px solid var(--purple);
+  border-radius: 5px;
+}
+
+.button-line:hover {
+  border: 2px solid var(--purple);
+  border-radius: 5px;
+}

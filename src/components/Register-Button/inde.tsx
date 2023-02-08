@@ -3,8 +3,10 @@ import './style.css';
 
 export const RegisterButton = () => {
   return (
-    <a href="" type="submit" className="registerButton">
-      Register
-    </a>
+    <div className="button-line">
+      <a href="" type="submit" className="registerButton">
+        Register
+      </a>
+    </div>
   );
 };

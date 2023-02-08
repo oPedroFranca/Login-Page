@@ -2,6 +2,8 @@ import React from 'react';
 import './style.css';
 import { LeftPage } from '../../components/Left-page-screen';
 import { RegisterForm } from '../../components/Register-Form';
+import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 
 export const Register = () => {
   return (
@@ -24,26 +26,14 @@ export const Register = () => {
 
           <span className="login-with">
             <p>Create account with</p>
-            <a href="#">
-              <link
-                rel="icon"
-                href="../../../public/google.png"
-                type="image/png"
-              />
+            <a href="#" className="linkedin-icon">
+              <FaLinkedinIn />
             </a>
-            <a href="#">
-              <link
-                rel="icon"
-                href="../../../public/google.png"
-                type="image/png"
-              />
+            <a href="#" className="facebook-icon">
+              <FaFacebookF />
             </a>
-            <a href="#">
-              <link
-                rel="icon"
-                href="../../../public/google.png"
-                type="image/png"
-              />
+            <a href="#" className="google-icon">
+              <FcGoogle />
             </a>
           </span>
         </div>
