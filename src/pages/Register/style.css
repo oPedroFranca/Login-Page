@@ -6,9 +6,9 @@
   padding: 15px;
 }
 
-/* -------------------------- Right Screen -------------------------- */
+/* -------------------------- left Screen -------------------------- */
 
-.right-page-register {
+.left-page-register {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -17,10 +17,10 @@
   height: 100%;
 }
 
-.right-page-body {
+.left-page-body {
   display: grid;
   width: 384px;
-  height: 518px;
+  height: 600px;
   align-items: center;
 }
 
@@ -28,9 +28,8 @@
 
 .signin-header {
   display: flex;
-  position: absolute;
-  top: 2%;
-  right: 5%;
+  position: relative;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -59,57 +58,27 @@
 
 /* -------------------------- Body content -------------------------- */
 
-.login-account-text {
+.register-account-text {
   width: 100%;
 }
 
-.login-account-text h1 {
+.register-account-text h1 {
   color: var(--dark);
+  margin-bottom: 5px;
 }
 
-.login-account-text p {
+.register-account-text p {
   color: var(--gray);
   font-size: 16px;
 }
 
-/* -------------------------- Footer content -------------------------- */
+/* ------------------------- Register With ---------------------------- */
 
-.login-with {
+.register-with {
   display: flex;
   align-items: center;
 }
 
-.login-with p{
-  margin-right: 8px;
+.register-with p {
   color: var(--gray);
-}
-
-.login-with a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  margin: 0px 8px 0px 8px;
-  border-radius: 50%;
-  border: 1px solid var(--gray);
-  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
-}
-
-.login-with .linkedin-icon {
-  color: #0B84BF;
-}
-
-.login-with .facebook-icon {
-  color: #1977F2;
-}
-
-.login-with a:hover {
-  outline: none;
-  border: 0.15em solid var(--purple);
-}
-
-.login-with a:focus {
-  outline: none;
-  border: 0.15em solid var(--purple);
 }

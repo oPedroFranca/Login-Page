@@ -32,3 +32,81 @@ button {
   cursor: pointer;
   background-color: white;
 }
+
+
+
+
+@media (max-height: 1080px) {
+  .right-page-screen span img {
+    width: 90%;
+  }
+}
+
+@media (max-height: 850px) {
+  .right-page-screen span img {
+    width: 80%;
+  }
+}
+
+@media (max-height: 800px) {
+  .right-page-screen span img {
+    width: 70%;
+  }
+}
+
+@media (max-height: 700px){
+  .right-page-screen span img {
+    width: 60%;
+  }
+}
+
+@media (max-height: 600px){
+  .right-page-screen span img {
+    display: none;
+  }
+}
+
+@media (max-height: 550px){
+  .bodyLogin {
+    display: flex;
+    justify-content: center;
+  }
+  .right-page-screen {
+    display: none;
+  }
+  .left-page-register,
+  .left-page-login {
+    width: 100%;
+    padding: 0px;
+  }
+  .signin-header {
+    position: relative;
+    justify-content: flex-end;
+    right: 0px;
+    top: 1px;
+  }
+}
+
+@media (max-width: 750px){
+  .bodyLogin {
+    display: grid;
+    justify-content: center;
+  }
+  .right-page-screen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-page-register,
+  .left-page-login{
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .signin-header {
+    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+    right: 0px;
+  }
+}

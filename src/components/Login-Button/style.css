@@ -1,35 +1,35 @@
-.registerButton {
+.loginButton {
   font-size: 15px;
   color: var(--white);
   background-color: var(--purple);
   letter-spacing:1px;
-  padding: 16px 50px;
+  padding: 16px 167px;
   border-radius: 5px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   text-decoration: none;
 }
 
-.registerButton:focus {
+.loginButton:focus {
   outline: none;
 }
 
-.button-register-line {
+.button-login-line {
   display: flex;
   position: relative;
   align-items: center;
   padding: 2px;
-  width: 171px;
+  width: 100%;
   border: 2px solid var(--white);
   border-radius: 5px;
   transition: border 0.5s ease-out 3ms;
 }
 
-.button-register-line:hover {
+.button-login-line:hover {
   border: 2px solid var(--purple);
   border-radius: 5px;
 }
 
-.button-register-line:focus {
+.button-login-line:focus {
   border: 2px solid var(--purple);
   border-radius: 5px;
 }

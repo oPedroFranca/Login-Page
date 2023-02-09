@@ -1,0 +1,34 @@
+.icons {
+  display: flex;
+  margin-left: 8px;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 0px 8px 0px 8px;
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+  transition: color 0.5s ease-out 3ms , border 0.5s ease-out 3ms;
+}
+
+.icons .linkedin-icon {
+  color: #0B84BF;
+}
+
+.icons .facebook-icon {
+  color: #1977F2;
+}
+
+.icons a:hover {
+  outline: none;
+  border: 0.15em solid var(--purple);
+}
+
+.icons a:focus {
+  outline: none;
+  border: 0.15em solid var(--purple);
+}

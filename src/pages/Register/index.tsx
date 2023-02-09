@@ -1,42 +1,33 @@
 import React from 'react';
 import './style.css';
-import { LeftPage } from '../../components/Left-page-screen';
 import { RegisterForm } from '../../components/Register-Form';
-import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc';
+import { RegisterIcons } from '../../components/Register-Icons';
+import { RighPage } from '../../components/Right-page-screen';
 
 export const Register = () => {
   return (
     <div className="bodyLogin">
-      <LeftPage />
+      <div className="left-page-register">
+        <div className="left-page-body">
+          <span className="signin-header">
+            <p>Already have an account ?</p>
+            <button className="button-signin">SIGN IN</button>
+          </span>
 
-      <div className="right-page-register">
-        <span className="signin-header">
-          <p>Already have an account ?</p>
-          <button className="button-signin">SIGN IN</button>
-        </span>
-        <div className="right-page-body">
-          <span className="login-account-text">
+          <span className="register-account-text">
             <h1>Hello new user!</h1>
-            <p>Register your account</p>
+            <p>Enter your details to register.</p>
           </span>
 
           <RegisterForm />
 
-          <span className="login-with">
+          <span className="register-with">
             <p>Create account with</p>
-            <a href="#" className="linkedin-icon">
-              <FaLinkedinIn />
-            </a>
-            <a href="#" className="facebook-icon">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="google-icon">
-              <FcGoogle />
-            </a>
+            <RegisterIcons />
           </span>
         </div>
       </div>
+      <RighPage />
     </div>
   );
 };

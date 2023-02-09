@@ -1,18 +1,10 @@
 import React from 'react';
-import { RegisterButton } from '../Register-Button';
+import { LoginButton } from '../Login-Button/inde';
 import './style.css';
 
-export const RegisterForm = () => {
+export const LoginForm = () => {
   return (
-    <form className="form-register">
-      <span className="forms-iputs name">
-        <label htmlFor="input-email">Name</label>
-        <input
-          type="text"
-          placeholder="Pedro Henrique"
-          className="input-Name"
-        />
-      </span>
+    <form className="form-login">
       <span className="forms-iputs email">
         <label htmlFor="input-email">Email</label>
         <input
@@ -30,7 +22,7 @@ export const RegisterForm = () => {
         />
       </span>
 
-      <RegisterButton />
+      <LoginButton />
     </form>
   );
 };

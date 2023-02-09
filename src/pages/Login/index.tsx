@@ -1,21 +1,29 @@
 import React from 'react';
+import { LoginForm } from '../../components/Login-Form';
+import { RegisterIcons } from '../../components/Register-Icons';
+import { RighPage } from '../../components/Right-page-screen';
 import './style.css';
 
 export const Login = () => {
   return (
     <div className="bodyLogin">
-      <div className="left-page-screen-register">
-        <span>
-          <h1>Welcome to my project</h1>
-          <p>
-            This project was created for my personal development as a
-            programmer. I hope you like the result.
-          </p>
+      <div className="left-page-login">
+        <div className="left-page-login-body">
+          <span className="login-account-text">
+            <h1>Hi user!</h1>
+            <p>Welcome back! Please enter your details.</p>
+          </span>
 
-          <img src="../../../public/Programming-amico.svg" />
-        </span>
+          <LoginForm />
+
+          <span className="login-with">
+            <p>Login account with</p>
+            <RegisterIcons />
+          </span>
+        </div>
       </div>
-      <div className="right-page-screen-register"></div>
+
+      <RighPage />
     </div>
   );
 };

@@ -1,0 +1,37 @@
+.right-page-screen {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px 1px 5px;
+
+  color: var(--white);
+  background: rgb(128,118,252);
+  background: linear-gradient(183deg, rgba(128,118,252,1) 0%, rgba(249,199,227,1) 86%);
+
+  width: 55%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.right-page-screen span {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.right-page-screen span h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.right-page-screen span p {
+  padding: 0px 30px 0px 30px;
+  font-size: 13px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.right-page-screen span img {
+  width: 100%;
+}

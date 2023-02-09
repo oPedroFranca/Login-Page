@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css';
 
-export const LeftPage = () => {
+export const RighPage = () => {
   return (
-    <div className="left-page-screen">
+    <div className="right-page-screen">
       <span>
         <h1>Welcome to my project !</h1>
         <p>
