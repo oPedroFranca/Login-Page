@@ -15,7 +15,6 @@ export const Register = () => {
           <p>Already have an account ?</p>
           <button className="button-signin">SIGN IN</button>
         </span>
-
         <div className="right-page-body">
           <span className="login-account-text">
             <h1>Hello new user!</h1>

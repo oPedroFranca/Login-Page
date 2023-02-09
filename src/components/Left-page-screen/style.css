@@ -64,3 +64,51 @@
     display: none;
   }
 }
+
+
+@media (max-height: 560px){
+  .bodyLogin {
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .left-page-screen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-page-register {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .signin-header {
+    position: relative;
+    justify-content: flex-end;
+    right: 0px;
+    top: 1px;
+  }
+}
+
+@media (max-width: 750px){
+  .bodyLogin {
+    display: grid;
+    justify-content: center;
+  }
+  .left-page-screen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-page-register {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .signin-header {
+    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+    right: 0px;
+  }
+}
