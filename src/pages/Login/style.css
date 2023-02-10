@@ -1,24 +1,79 @@
 .bodyLogin {
+  display: grid;
   display: flex;
   height: 100vh;
   width: 100vw;
   background-color: var(--white);
-  padding: 15px;
+  padding: 10px;
 }
 
+/* -------------------------- left Screen -------------------------- */
+
 .left-page-login {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 50px 0px 60px;
-  width: 55%;
+  width: 50%;
   height: 100%;
 }
 
-.left-page-login-body {
+/* -------------------------- header -------------------------- */
+
+.header-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6%;
+  padding: 0px 25px 0px 25px;
+}
+
+.header-login p {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.signin-header {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signin-header p {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+
+.button-signin {
+  margin-left: 10px;
+  border: solid 1px var(--gray);
+  color: var(--dark-gray);
+  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
+}
+
+.button-signin:hover {
+  color: var(--purple);
+  border: 0.2em solid var(--purple);
+}
+
+.button-signin:focus {
+  outline: none;
+  color: var(--purple);
+  border: 0.2em solid var(--purple);
+}
+
+/* -------------------------- Body -------------------------- */
+
+.body-login {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88%;
+}
+
+.form-container-login {
   display: grid;
   width: 384px;
-  height: 450px;
+  height: 500px;
   align-items: center;
 }
 
@@ -36,13 +91,13 @@
   font-size: 16px;
 }
 
-/* ------------------------- Login With ---------------------------- */
-
-.login-with {
+.create-account-with {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  width: 384px;
 }
 
-.login-with p {
+.create-account-with p {
   color: var(--gray);
 }

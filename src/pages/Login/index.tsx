@@ -8,18 +8,28 @@ export const Login = () => {
   return (
     <div className="bodyLogin">
       <div className="left-page-login">
-        <div className="left-page-login-body">
-          <span className="login-account-text">
-            <h1>Hi user!</h1>
-            <p>Welcome back! Please enter your details.</p>
+        <span className="header-login">
+          <p>&#x2022; Untitled UI</p>
+          <span className="signin-header">
+            <p>Already have an account ?</p>
+            <button className="button-signin">SIGN IN</button>
           </span>
+        </span>
 
-          <LoginForm />
+        <div className="body-login">
+          <div className="form-container-login">
+            <span className="login-account-text">
+              <h1>Hi user!</h1>
+              <p>Welcome back! Please enter your details.</p>
+            </span>
 
-          <span className="login-with">
-            <p>Login account with</p>
-            <RegisterIcons />
-          </span>
+            <LoginForm />
+
+            <span className="create-account-with">
+              <p>Login account with</p>
+              <RegisterIcons />
+            </span>
+          </div>
         </div>
       </div>
 

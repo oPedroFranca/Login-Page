@@ -6,27 +6,33 @@ import { RighPage } from '../../components/Right-page-screen';
 
 export const Register = () => {
   return (
-    <div className="bodyLogin">
+    <div className="bodyRegister">
       <div className="left-page-register">
-        <div className="left-page-body">
+        <span className="header-register">
+          <p>&#x2022; Untitled UI</p>
           <span className="signin-header">
             <p>Already have an account ?</p>
             <button className="button-signin">SIGN IN</button>
           </span>
+        </span>
 
-          <span className="register-account-text">
-            <h1>Hello new user!</h1>
-            <p>Enter your details to register.</p>
-          </span>
+        <div className="body-register">
+          <div className="form-container">
+            <span className="register-account-text">
+              <h1>Hello new user!</h1>
+              <p>Enter your details to register.</p>
+            </span>
 
-          <RegisterForm />
+            <RegisterForm />
 
-          <span className="register-with">
-            <p>Create account with</p>
-            <RegisterIcons />
-          </span>
+            <span className="create-account-with">
+              <p>Create account with</p>
+              <RegisterIcons />
+            </span>
+          </div>
         </div>
       </div>
+
       <RighPage />
     </div>
   );

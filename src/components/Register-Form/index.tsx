@@ -29,7 +29,6 @@ export const RegisterForm = () => {
           className="input-password"
         />
       </span>
-
       <RegisterButton />
     </form>
   );
