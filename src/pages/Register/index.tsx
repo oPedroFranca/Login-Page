@@ -12,7 +12,7 @@ export const Register = () => {
           <p>&#x2022; Untitled UI</p>
           <span className="signin-header">
             <p>Already have an account ?</p>
-            <button className="button-signin">SIGN IN</button>
+            <button className="button-signin">Sign in</button>
           </span>
         </span>
 

@@ -22,6 +22,18 @@ export const LoginForm = () => {
         />
       </span>
 
+      <span className="form-button">
+        <span className="checkbox-remeber-day">
+          <label className="switch">
+            <input type="checkbox" />
+            <span className="slider round"></span>
+          </label>
+          <p>Remember for 30 days</p>
+        </span>
+
+        <a href="#">Forgot password</a>
+      </span>
+
       <LoginButton />
     </form>
   );

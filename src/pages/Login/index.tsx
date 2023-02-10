@@ -10,17 +10,17 @@ export const Login = () => {
       <div className="left-page-login">
         <span className="header-login">
           <p>&#x2022; Untitled UI</p>
-          <span className="signin-header">
-            <p>Already have an account ?</p>
-            <button className="button-signin">SIGN IN</button>
+          <span className="signup-header">
+            <p>Don&apos;t have an account ?</p>
+            <button className="button-signup">Sign up</button>
           </span>
         </span>
 
         <div className="body-login">
           <div className="form-container-login">
             <span className="login-account-text">
-              <h1>Hi user!</h1>
-              <p>Welcome back! Please enter your details.</p>
+              <h1>Welcome back</h1>
+              <p>Please enter your details.</p>
             </span>
 
             <LoginForm />
