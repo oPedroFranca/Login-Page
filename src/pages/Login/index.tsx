@@ -1,7 +1,8 @@
 import React from 'react';
+import { RegisterIcons } from '../../components/icons-form';
 import { LoginForm } from '../../components/Login-Form';
-import { RegisterIcons } from '../../components/Register-Icons';
 import { RighPage } from '../../components/Right-page-screen';
+import { SmallScreenLogo } from '../../components/SmallScreenLogo';
 import './style.css';
 
 export const Login = () => {
@@ -12,19 +13,20 @@ export const Login = () => {
           <p>&#x2022; Untitled UI</p>
           <span className="signup-header">
             <p>Don&apos;t have an account ?</p>
-            <button className="button-signup">Sign up</button>
+            <a className="button-signup" href="/register">
+              Sign up
+            </a>
           </span>
         </span>
 
         <div className="body-login">
           <div className="form-container-login">
+            <SmallScreenLogo />
             <span className="login-account-text">
               <h1>Welcome back</h1>
               <p>Please enter your details.</p>
             </span>
-
             <LoginForm />
-
             <span className="create-account-with">
               <p>Login account with</p>
               <RegisterIcons />

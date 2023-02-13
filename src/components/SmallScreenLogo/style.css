@@ -1,0 +1,11 @@
+.smallScreenLogo {
+  display: none;
+  justify-content: center;
+  width: 100%;
+}
+
+.smallScreenLogo img{
+  width: 120px;
+  margin: 20px 0px 20px 0px;
+}
+

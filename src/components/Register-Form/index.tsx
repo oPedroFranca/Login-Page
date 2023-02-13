@@ -1,5 +1,5 @@
 import React from 'react';
-import { RegisterButton } from '../Register-Button';
+import { ButtonSubmit } from '../Submit-Button/inde';
 import './style.css';
 
 export const RegisterForm = () => {
@@ -29,7 +29,7 @@ export const RegisterForm = () => {
           className="input-password"
         />
       </span>
-      <RegisterButton />
+      <ButtonSubmit value="Register" />
     </form>
   );
 };

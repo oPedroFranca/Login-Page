@@ -1,19 +1,20 @@
-.registerButton {
+.submitButtom {
+  width: 376px;
+  height: 40px;
   font-size: 15px;
   color: var(--white);
   background-color: var(--purple);
   letter-spacing:1px;
-  padding: 16px 156px;
   border-radius: 5px;
+  border: none;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  text-decoration: none;
 }
 
-.registerButton:focus {
+.submitButtom:focus {
   outline: none;
 }
 
-.button-register-line {
+.button-login-line {
   display: flex;
   position: relative;
   align-items: center;
@@ -24,12 +25,12 @@
   transition: border 0.5s ease-out 3ms;
 }
 
-.button-register-line:hover {
+.button-login-line:hover {
   border: 2px solid var(--purple);
   border-radius: 5px;
 }
 
-.button-register-line:focus {
+.button-login-line:focus {
   border: 2px solid var(--purple);
   border-radius: 5px;
 }

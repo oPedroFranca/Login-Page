@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoginButton } from '../Login-Button/inde';
+import { ButtonSubmit } from '../Submit-Button/inde';
 import './style.css';
 
 export const LoginForm = () => {
@@ -34,7 +34,7 @@ export const LoginForm = () => {
         <a href="#">Forgot password</a>
       </span>
 
-      <LoginButton />
+      <ButtonSubmit value="Login" />
     </form>
   );
 };

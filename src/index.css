@@ -33,6 +33,37 @@ button {
   background-color: white;
 }
 
+@media screen and (max-width: 850px){
+  .right-page-screen {
+    display: none;
+  }
+  .left-page-login,
+  .left-page-register {
+    width: 100%;
+  }
+  .smallScreenLogo {
+    display: flex;
+  }
+  .form-container-login {
+    height: 550px;
+  }
+  .form-container-register{
+    height: 600px;
+  }
+  .login-account-text h1,
+  .login-account-text p,
+  .register-account-text h1,
+  .register-account-text p {
+    text-align: center;
+  }
+  .signin-header p,
+  .signup-header p {
+    display: none;
+  }
+  .create-account-with{
+    justify-content: center;
+  }
+}
 
 
 
