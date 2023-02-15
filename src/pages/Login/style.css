@@ -58,7 +58,7 @@
 
   color: var(--dark-gray);
   text-decoration: none;
-  transition: color 0.5s ease-out 10ms , border 0.5s ease-out 10ms;
+  transition: color 0.2s ease-out 10ms , border 0.2s ease-out 10ms;
 }
 
 .button-signup:hover {

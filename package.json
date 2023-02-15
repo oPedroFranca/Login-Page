@@ -31,7 +31,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.1",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.4",
     "process": "^0.11.10",
     "react-error-overlay": "^6.0.10",
     "react-router-dom": "^6.8.0",

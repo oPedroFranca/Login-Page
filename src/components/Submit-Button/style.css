@@ -10,10 +10,6 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.submitButtom:focus {
-  outline: none;
-}
-
 .button-login-line {
   display: flex;
   position: relative;
@@ -30,7 +26,3 @@
   border-radius: 5px;
 }
 
-.button-login-line:focus {
-  border: 2px solid var(--purple);
-  border-radius: 5px;
-}
