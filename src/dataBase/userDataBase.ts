@@ -5,5 +5,10 @@ export class UserDatabase {
 
   addUser(user: User) {
     this.users.push(user);
+    console.log(this.users);
+  }
+
+  getUsers() {
+    return this.users;
   }
 }

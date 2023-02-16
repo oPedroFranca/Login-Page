@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonSubmit } from '../../components/Submit-Button/inde';
+import { ButtonSubmit } from '../../components/Submit-Button';
 import './style.css';
 
 export const Home = () => {

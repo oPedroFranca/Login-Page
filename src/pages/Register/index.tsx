@@ -13,7 +13,9 @@ export const Register = () => {
           <p>&#x2022; Untitled UI</p>
           <span className="signin-header">
             <p>Already have an account ?</p>
-            <a className="button-signin">Sign in</a>
+            <a className="button-signin" href="/login">
+              Sign in
+            </a>
           </span>
         </span>
 

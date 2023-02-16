@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
-import { ButtonSubmit } from '../Submit-Button/inde';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../../Context/auth/authContext';
+import { ButtonSubmit } from '../Submit-Button';
+
 import './style.css';
 
 export const RegisterForm = () => {
-  const [nome, setNome] = useState('');
+  const [name, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const auth = useContext(AuthContext);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(`Nome: ${nome}, Email: ${email}, Password: ${password}`);
+
+    if (name && email && password) {
+      auth.register(name, email, password);
+    }
   };
 
   return (
@@ -20,7 +26,7 @@ export const RegisterForm = () => {
           type="text"
           placeholder="Pedro Henrique"
           className="input-Name"
-          value={nome}
+          value={name}
           onChange={(e) => setNome(e.target.value)}
         />
       </span>

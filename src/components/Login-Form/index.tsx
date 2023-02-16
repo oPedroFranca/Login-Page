@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
-import { ButtonSubmit } from '../Submit-Button/inde';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../../Context/auth/authContext';
+import { ButtonSubmit } from '../Submit-Button';
 import './style.css';
 
 export const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const auth = useContext(AuthContext);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(`Email: ${email}, Password: ${password}`);
+
+    if (email && password) {
+      auth.signin(email, password);
+    }
   };
 
   return (
