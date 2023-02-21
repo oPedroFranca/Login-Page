@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/auth/authContext';
 import { ButtonSubmit } from '../Submit-Button';
 import './style.css';
@@ -8,11 +9,11 @@ export const LoginForm = () => {
   const [password, setPassword] = useState('');
   const auth = useContext(AuthContext);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (email && password) {
-      auth.signin(email, password);
+      const authenticate = await auth.signin(email, password);
     }
   };
 

@@ -20,7 +20,7 @@ export const UseApi = () => ({
 
   isLogged(email: string, password: string) {
     const registeredUsers = database.getUsers();
-
+    // localStorage.clear();
     if ('users' in localStorage) {
       const matchedUser = registeredUsers.find(
         (user: User) => user.email === email && user.password === password,
@@ -30,6 +30,8 @@ export const UseApi = () => ({
       else console.log('Email ou senha incorretos!');
 
       return matchedUser;
+    } else {
+      console.log('sem usuarios cadastrados');
     }
   },
 });

@@ -15,6 +15,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     const user = await api.isLogged(email, password);
     if (user) {
       setUser(user);
+      localStorage.setItem('authenticated', 'true');
       return true;
     }
 
@@ -23,6 +24,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
 
   const signout = () => {
     setUser(null);
+    localStorage.removeItem('authenticated');
   };
 
   return (
