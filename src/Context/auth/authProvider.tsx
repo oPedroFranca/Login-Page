@@ -12,13 +12,21 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
   };
 
   const signin = async (email: string, password: string) => {
-    api.isLogged(email, password);
+    const user = await api.isLogged(email, password);
+    if (user) {
+      setUser(user);
+      return true;
+    }
 
-    return true;
+    return false;
+  };
+
+  const signout = () => {
+    setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, register, signin }}>
+    <AuthContext.Provider value={{ user, register, signin, signout }}>
       {children}
     </AuthContext.Provider>
   );

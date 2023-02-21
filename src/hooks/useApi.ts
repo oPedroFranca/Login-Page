@@ -25,16 +25,11 @@ export const UseApi = () => ({
       const matchedUser = registeredUsers.find(
         (user: User) => user.email === email && user.password === password,
       );
-      if (matchedUser) {
-        console.log('Login bem sucedido!');
-        return true;
-      } else {
-        console.log('Email ou senha incorretos!');
-        return false;
-      }
-    } else {
-      console.log('Nenhum usuário cadastrado!');
-      return false;
+
+      if (matchedUser) console.log('Login bem sucedido!');
+      else console.log('Email ou senha incorretos!');
+
+      return matchedUser;
     }
   },
 });
