@@ -22,13 +22,13 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     return false;
   };
 
-  const signout = () => {
+  const logout = () => {
     setUser(null);
     localStorage.removeItem('authenticated');
   };
 
   return (
-    <AuthContext.Provider value={{ user, register, signin, signout }}>
+    <AuthContext.Provider value={{ user, register, signin, logout }}>
       {children}
     </AuthContext.Provider>
   );

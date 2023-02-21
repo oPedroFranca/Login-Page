@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/auth/authContext';
 import { ButtonSubmit } from '../Submit-Button';
 
@@ -9,12 +10,15 @@ export const RegisterForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const auth = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (name && email && password) {
       auth.register(name, email, password);
+
+      navigate('/login');
     }
   };
 
