@@ -19,7 +19,22 @@ export const UseApi = () => ({
   },
 
   isLogged(email: string, password: string) {
-    const users = database.getUsers();
-    console.log(users, email, password);
+    const registeredUsers = database.getUsers();
+
+    if ('users' in localStorage) {
+      const matchedUser = registeredUsers.find(
+        (user: User) => user.email === email && user.password === password,
+      );
+      if (matchedUser) {
+        console.log('Login bem sucedido!');
+        return true;
+      } else {
+        console.log('Email ou senha incorretos!');
+        return false;
+      }
+    } else {
+      console.log('Nenhum usuário cadastrado!');
+      return false;
+    }
   },
 });
