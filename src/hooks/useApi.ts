@@ -1,5 +1,6 @@
 import { UserDatabase } from '../dataBase/userDataBase';
 import { User } from '../types/User';
+
 const database = new UserDatabase();
 
 export const UseApi = () => ({
@@ -15,7 +16,21 @@ export const UseApi = () => ({
       password: password,
     };
 
-    database.addUser(newUser);
+    const registeredUsers = database.getUsers();
+
+    if ('users' in localStorage) {
+      const matchedUser = registeredUsers.find(
+        (user: User) => user.email === email && user.password === password,
+      );
+
+      if (matchedUser) {
+        alert('Este usuario já existente');
+        return false;
+      }
+
+      database.addUser(newUser);
+      return true;
+    }
   },
 
   isLogged(email: string, password: string) {
@@ -30,8 +45,6 @@ export const UseApi = () => ({
       else console.log('Email ou senha incorretos!');
 
       return matchedUser;
-    } else {
-      console.log('sem usuarios cadastrados');
     }
   },
 });

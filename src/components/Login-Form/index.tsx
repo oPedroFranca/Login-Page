@@ -2,26 +2,31 @@ import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/auth/authContext';
 import { ButtonSubmit } from '../Submit-Button';
+import {
+  validateEmail,
+  validatePassword,
+} from '../Validade-Filds/validateFields';
 import './style.css';
 
 export const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const auth = useContext(AuthContext);
+  const authContext = useContext(AuthContext);
   const navigate = useNavigate();
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleLoginSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const isEmailValid = validateEmail(email);
+    const isPasswordValid = validatePassword(password);
 
-    if (email && password) {
-      auth.signin(email, password);
-
+    if (isEmailValid && isPasswordValid) {
+      authContext.signin(email, password);
       navigate('/');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-login">
+    <form onSubmit={handleLoginSubmit} className="form-login">
       <span className="forms-iputs email">
         <label htmlFor="input-email">Email</label>
         <input
@@ -40,6 +45,7 @@ export const LoginForm = () => {
           className="input-password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          minLength={8}
         />
       </span>
 
