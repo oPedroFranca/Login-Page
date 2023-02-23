@@ -18,6 +18,9 @@ export const UseApi = () => ({
 
     const registeredUsers = database.getUsers();
 
+    const usersJSON = localStorage.getItem('users');
+    console.log(usersJSON);
+
     if ('users' in localStorage) {
       const matchedUser = registeredUsers.find(
         (user: User) => user.email === email && user.password === password,
@@ -27,10 +30,10 @@ export const UseApi = () => ({
         alert('Este usuario já existente');
         return false;
       }
-
-      database.addUser(newUser);
-      return true;
     }
+
+    database.addUser(newUser);
+    return true;
   },
 
   isLogged(email: string, password: string) {

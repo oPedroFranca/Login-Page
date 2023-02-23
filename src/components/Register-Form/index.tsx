@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/auth/authContext';
 import { ButtonSubmit } from '../Submit-Button';
 import {
-  validateEmail,
   validateName,
+  validateEmail,
   validatePassword,
 } from '../Validade-Filds/validateFields';
 import './style.css';
@@ -18,11 +18,11 @@ export const RegisterForm = () => {
 
   const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const isNameValid = validateName(name);
     const isEmailValid = validateEmail(email);
     const isPasswordValid = validatePassword(password);
-    const isNameValid = validateName(password);
 
-    if (isEmailValid && isPasswordValid && isNameValid) {
+    if (isNameValid && isEmailValid && isPasswordValid) {
       const isValid = authContext.register(name, email, password);
       if (isValid) {
         navigate('/login');
@@ -31,7 +31,7 @@ export const RegisterForm = () => {
   };
 
   return (
-    <form onSubmit={handleFormSubmit} className="form-register">
+    <form noValidate onSubmit={handleFormSubmit} className="form-register">
       <span className="forms-iputs name">
         <label htmlFor="input-name">Name</label>
         <input
@@ -42,6 +42,7 @@ export const RegisterForm = () => {
           onChange={(e) => setName(e.target.value)}
           required
         />
+        <p className="errorForm errorFormName"></p>
       </span>
       <span className="forms-iputs email">
         <label htmlFor="input-email">Email</label>
@@ -54,6 +55,7 @@ export const RegisterForm = () => {
           required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         />
+        <p className="errorForm errorFormEmail"></p>
       </span>
       <span className="forms-iputs password">
         <label htmlFor="input-password">Password</label>
@@ -66,6 +68,7 @@ export const RegisterForm = () => {
           required
           minLength={8}
         />
+        <p className="errorForm errorFormPassword"></p>
       </span>
       <ButtonSubmit value="Register" />
     </form>

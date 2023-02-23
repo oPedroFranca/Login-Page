@@ -27,7 +27,7 @@ export const LoginForm = () => {
 
   return (
     <form onSubmit={handleLoginSubmit} className="form-login">
-      <span className="forms-iputs email">
+      <div className="forms-iputs email">
         <label htmlFor="input-email">Email</label>
         <input
           type="email"
@@ -36,8 +36,9 @@ export const LoginForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-      </span>
-      <span className="forms-iputs password">
+        <p className="errorForm errorFormEmail"></p>
+      </div>
+      <div className="forms-iputs password">
         <label htmlFor="input-password">Password</label>
         <input
           type="password"
@@ -47,19 +48,20 @@ export const LoginForm = () => {
           onChange={(e) => setPassword(e.target.value)}
           minLength={8}
         />
-      </span>
+        <p className="errorForm errorFormPassword"></p>
+      </div>
 
-      <span className="form-button">
-        <span className="checkbox-remeber-day">
+      <div className="form-button">
+        <div className="checkbox-remeber-day">
           <label className="switch">
             <input type="checkbox" />
             <span className="slider round"></span>
           </label>
           <p>Remember for 30 days</p>
-        </span>
+        </div>
 
         <a href="#">Forgot password</a>
-      </span>
+      </div>
 
       <ButtonSubmit value="Login" />
     </form>
