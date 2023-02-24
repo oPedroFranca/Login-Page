@@ -5,7 +5,7 @@ import { ButtonSubmit } from '../Submit-Button';
 import {
   validateEmail,
   validatePassword,
-} from '../Validade-Filds/validateFields';
+} from '../Validate-Filds/validateFields';
 import './style.css';
 
 export const LoginForm = () => {
