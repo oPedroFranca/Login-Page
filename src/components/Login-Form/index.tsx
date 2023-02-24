@@ -26,7 +26,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleLoginSubmit} className="form-login">
+    <form noValidate onSubmit={handleLoginSubmit} className="form-login">
       <div className="forms-iputs email">
         <label htmlFor="input-email">Email</label>
         <input

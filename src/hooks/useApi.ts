@@ -33,12 +33,14 @@ export const UseApi = () => ({
     }
 
     database.addUser(newUser);
+    console.log(registeredUsers);
     return true;
   },
 
   isLogged(email: string, password: string) {
     const registeredUsers = database.getUsers();
     // localStorage.clear();
+
     if ('users' in localStorage) {
       const matchedUser = registeredUsers.find(
         (user: User) => user.email === email && user.password === password,
