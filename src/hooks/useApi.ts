@@ -27,7 +27,7 @@ export const UseApi = () => ({
       );
 
       if (matchedUser) {
-        alert('Este usuario já existente');
+        alert('This user already exists!');
         return false;
       }
     }
@@ -46,8 +46,10 @@ export const UseApi = () => ({
         (user: User) => user.email === email && user.password === password,
       );
 
-      if (matchedUser) console.log('Login bem sucedido!');
-      else console.log('Email ou senha incorretos!');
+      if (matchedUser) console.log('Login successful!');
+      else {
+        alert('Incorrect email or password!');
+      }
 
       return matchedUser;
     }
