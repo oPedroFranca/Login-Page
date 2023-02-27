@@ -46,10 +46,7 @@ export const UseApi = () => ({
         (user: User) => user.email === email && user.password === password,
       );
 
-      if (matchedUser) console.log('Login successful!');
-      else {
-        alert('Incorrect email or password!');
-      }
+      if (!matchedUser) alert('Incorrect email or password!');
 
       return matchedUser;
     }
