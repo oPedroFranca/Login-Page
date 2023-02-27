@@ -18,9 +18,6 @@ export const UseApi = () => ({
 
     const registeredUsers = database.getUsers();
 
-    const usersJSON = localStorage.getItem('users');
-    console.log(usersJSON);
-
     if ('users' in localStorage) {
       const matchedUser = registeredUsers.find(
         (user: User) => user.email === email && user.password === password,
@@ -33,7 +30,6 @@ export const UseApi = () => ({
     }
 
     database.addUser(newUser);
-    console.log(registeredUsers);
     return true;
   },
 
