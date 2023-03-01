@@ -21,7 +21,7 @@ export const LoginForm = () => {
 
     if (isEmailValid && isPasswordValid) {
       authContext.signin(email, password);
-      navigate('/');
+      navigate('/home');
     }
   };
 

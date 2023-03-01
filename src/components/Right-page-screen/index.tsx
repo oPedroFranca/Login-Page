@@ -5,7 +5,7 @@ export const RighPage = () => {
   return (
     <div className="right-page-screen">
       <span>
-        <img src="../../../public/nuvem-icon-logo.png" alt="" />
+        <img src="/nuvem-icon-logo.png" alt="" />
       </span>
     </div>
   );

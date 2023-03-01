@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="*" element={<Login />} />
         <Route
-          path="/"
+          path="/home"
           element={
             <RequireAuth>
               <Home />

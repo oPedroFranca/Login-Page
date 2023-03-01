@@ -45,6 +45,8 @@ export const UseApi = () => ({
       if (!matchedUser) alert('Incorrect email or password!');
 
       return matchedUser;
+    } else {
+      alert('Incorrect email or password!');
     }
   },
 });
