@@ -8,24 +8,20 @@ Para gerenciar os estados globais da aplicação, utilizei a ContextAPI, uma das
 
 A criação de rotas para diferentes componentes da aplicação foi feita à utilização do Router Dom, uma tecnologia que me permitiu criar rotas para diferentes componentes da aplicação, criando uma melhor organização do projeto.
 
-O sistema de autenticação do projeto se baseia no uso de token, que é uma forma verificar a identidade do usuário que está tentando acessar uma determinada área protegida da aplicação. Além disso, os dados dos usuários foram armazenados de forma persistente no localStorage, o que garantiu que o login permanecesse salvo mesmo após o usuário sair da página ou reiniciar o computador.
+O sistema de autenticação do projeto se baseia no uso de token, que é uma forma de verificar a identidade do usuário que está tentando acessar uma determinada área protegida da aplicação. Além disso, os dados dos usuários foram armazenados de forma persistente no localStorage, o que garantiu que o login permanecesse salvo mesmo após o usuário sair da página ou reiniciar o computador.
 
-Com esse projeto, eu aprimorei minhas habilidades em relação às tecnologias front-end, criando um sistema de login eficiente e fácil de usar.
+Com esse projeto, eu aprimorei minhas habilidades, criando um sistema de login eficiente e fácil de usar.
 
 Obs: Eu apenas simulei uma API e um banco de dados. Desta forma o projeto não possui back-end.
 
 ## Layout
 
-![pomodoro](https://user-images.githubusercontent.com/108022316/201197820-1feef6dc-2b3a-4f38-bdc5-c733bbb0dde7.png)
-![modal-pomodoro](https://user-images.githubusercontent.com/108022316/201198194-396ee36c-3e29-4b4b-bf88-915e15f067ad.png)
-
-![short-break](https://user-images.githubusercontent.com/108022316/201198184-35c628e0-ea90-45d3-bd23-1667fa1e350d.png)
-![modal-short-break](https://user-images.githubusercontent.com/108022316/201198192-0b261ba0-9e8f-444b-b374-c4553edbb075.png)
-
-![long-break](https://user-images.githubusercontent.com/108022316/201198196-5673bc2a-5a2b-4e7a-8390-f86638840dfb.png)
-![modal-long-break](https://user-images.githubusercontent.com/108022316/201198195-d7d92869-66dc-44c1-8d09-aab0a3ef5395.png)
-
-![descricao](https://user-images.githubusercontent.com/108022316/201198200-513fc436-1626-4236-af98-10cf44f50d44.png)
+![registerPage](https://user-images.githubusercontent.com/108022316/222234484-c146d67f-49c8-4302-a59a-de0b775d1836.png)
+![loginPage](https://user-images.githubusercontent.com/108022316/222234494-33cf6637-2d2c-4780-adb2-38b4ea783356.png)
+![homePage](https://user-images.githubusercontent.com/108022316/222234502-5e989b1c-fab7-43b6-9155-241388e26ba6.png)
+![registePageMobile](https://user-images.githubusercontent.com/108022316/222234508-e364cbaf-aecb-40bb-8807-26169d97c6af.png)
+![loginPageMobile](https://user-images.githubusercontent.com/108022316/222234516-131b7fc9-8dee-486f-a8e4-dea6bd216929.png)
+![homePageMobile](https://user-images.githubusercontent.com/108022316/222234526-b2fdb8a2-776e-4f84-a33a-20bc368916b0.png)
 
 ### Features
 
