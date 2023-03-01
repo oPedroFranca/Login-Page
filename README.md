@@ -30,7 +30,7 @@ Obs: Eu apenas simulei uma API e um banco de dados. Desta forma o projeto não p
 * **Visual agradável**
 
 ### Tecnologias usadas
-* JavaScript
+* TypeScript
 * ReactJs
 * HTML
 * CSS
