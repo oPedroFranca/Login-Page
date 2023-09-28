@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-O projeto consiste em um sistema de login desenvolvido visando aprimorar minhas habilidades como desenvolvedor. Em relação às tecnologias front-end. Foram utilizadas diversas tecnologias, como TypeScript, ReactJs, HTML e CSS, onde me preocupei em criar uma interface responsiva, amigável e intuitiva para os usuários
+O projeto consiste em um sistema de login desenvolvido visando aprimorar minhas habilidades como desenvolvedor. Em relação às tecnologias front-end. Foram utilizadas diversas tecnologias, como TypeScript, ReactJs, HTML e CSS, onde me preocupei em criar uma interface responsiva, amigável e intuitiva para os usuários.
 
 Para gerenciar os estados globais da aplicação, utilizei a ContextAPI, uma das funcionalidades principais do React. Com isso, tornou-se possível garantir a consistência dos dados em toda a aplicação, o que é fundamental para um sistema de login.
 
